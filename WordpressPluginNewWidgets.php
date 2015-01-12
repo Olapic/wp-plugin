@@ -5,7 +5,7 @@ Plugin URI: http://www.olapic.com/
 Description: Plugin to utilize shortcodes in order to surface olapic codes on wordpress
 Version: 1.0
 Author: Robert Pisano(Olapic)
-Co-Author: Jae Han Kin (Olapic)
+Co-Author: Jae Han Kim (Olapic)
 Author URI: http://www.olapic.com/
 USAGE: in WP template - [olapic data_tags ='(if applicaple insert here)' data_instance ='abc123' data_apikey='123abc' data_mode'development']
 */
@@ -28,10 +28,10 @@ function olapic_function($atts) {
 
   $data_instance= "data-instance=\"{$arguments['instance']}\" " ;
   $data_apikey= "data-apikey=\"{$arguments['apikey']}\" ";
- 	$data_tags = 	!empty($arguments['tags'] ? "data-tags=\"{$arguments['tags']}\" " : '';  
-  $data_mode = !empty($arguments['mode'] ? "data-mode=\"{$arguments['mode']}\" " : '';
+ 	$data_tags = 	!empty($arguments['tags']) ? "data-tags=\"{$arguments['tags']}\" " : '';  
+  $data_mode = !empty($arguments['mode']) ? "data-mode=\"{$arguments['mode']}\" " : '';
    //since data_tags and data_mode aren't required, checks if its empty before giving it a value
-    
+
 
 
 
