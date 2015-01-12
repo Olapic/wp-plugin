@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Olapic Brooks Running Widget
+Plugin Name: Olapic Widget
 Plugin URI: http://www.olapic.com/
-Description: Simple plugin for #brooksrunning
+Description: Simple plugin to render Olapic widgets
 Version: 1.0
 Author: Jae Han Kim (Olapic)
 Author URI: http://www.olapic.com/
