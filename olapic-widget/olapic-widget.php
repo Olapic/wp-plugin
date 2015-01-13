@@ -7,7 +7,7 @@ Version: 1.0
 Author: Robert Pisano(Olapic)
 Co-Author: Jae Han Kim (Olapic)
 Author URI: http://www.olapic.com/
-USAGE: in WP template - [olapic data_tags ='(if applicaple insert here)' data_instance ='abc123' data_apikey='123abc' data_mode'development']
+USAGE: in WP template - [olapic instance ='abc123' apikey='123abc' mode='development' tags ='(if applicaple insert here)']
 */
 
 /*
@@ -18,7 +18,7 @@ Olapic Plugin to utilize shortcode. It's made general to be more robust.
 add_shortcode("olapic", "olapic_handler");
 
 function olapic_handler($atts) {
-  $olapic_output = olapic_brooksrunning_function($atts); 
+  $olapic_output = olapic_function($atts); 
   return $olapic_output;
 }
 
