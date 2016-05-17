@@ -13,11 +13,14 @@ Using this plugin requires a simple two-step process:
 	- **Option B:** Upload the .zip file via the plugin upload page (`http://yourdomain.com/wp-admin/plugin-install.php?tab=upload`)
 
 2. Activate the plugin
+
 	![](https://dl.dropboxusercontent.com/s/i2ppn1mew4ob5wu/2016-05-13%20at%2010.15%20AM%20%281%29.png)
 
 3. In the Wordpress post, use the shortcode: 
 
 	`[olapic instance-id ="WIDGET_INSTANCE_ID" apikey="OLAPIC_API_KEY" tags="PRODUCT_ID"]`. 
+
+	![](https://dl.dropboxusercontent.com/s/dfmvlxrecf7ap8a/2016-05-17%20at%2011.16%20AM.png)
 
 	See below for shortcode parameter details.
 
