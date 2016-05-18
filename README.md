@@ -8,15 +8,19 @@ Wordpress doesn't like external JS being injected in post content, so this plugi
 
 Using this plugin requires a simple two-step process:
 
-1. Install the plugin
+1. Download the plugin
+
+	![](https://dl.dropboxusercontent.com/s/jnr6spwcpawmwy4/2016-05-18%20at%2010.53%20AM.png)
+
+2. Install the plugin
 	- **Option A:** Unzip the .zip file into the  WordPress Plugin Directory
 	- **Option B:** Upload the .zip file via the plugin upload page (`http://yourdomain.com/wp-admin/plugin-install.php?tab=upload`)
 
-2. Activate the plugin
+3. Activate the plugin
 
 	![](https://dl.dropboxusercontent.com/s/i2ppn1mew4ob5wu/2016-05-13%20at%2010.15%20AM%20%281%29.png)
 
-3. In the Wordpress post, use the shortcode: 
+4. In the Wordpress post, use the shortcode: 
 
 	`[olapic instance-id ="WIDGET_INSTANCE_ID" apikey="OLAPIC_API_KEY" tags="PRODUCT_ID"]`. 
 
