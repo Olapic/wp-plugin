@@ -1,8 +1,8 @@
 # Olapic wp-plugin
 
-Olapic WordPress Plugin. 
-
 Wordpress doesn't like external JS being injected in post content, so this plugin allows for Olapic code injection via shortcode.
+
+Official Wordpress Plugin Page: http://wordpress.org/plugins/olapic-shortcode-widget
 
 # Usage
 
