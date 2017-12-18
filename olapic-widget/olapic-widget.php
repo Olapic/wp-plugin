@@ -26,9 +26,10 @@ function olapic_function($atts)
     $data_apikey = "data-apikey=\"{$arguments['apikey']}\"";
     $data_tags = !empty($arguments['tags']) ? "data-tags=\"{$arguments['tags']}\"" : '';
     $data_mode = !empty($arguments['mode']) ? "data-mode=\"{$arguments['mode']}\"" : '';
-    //since data-tags and data-mode aren't required, checks if its empty before giving it a value
+    $data_lang = !empty($arguments['lang']) ? "data-lang=\"{$arguments['lang']}\"" : '';
+    //since data-tags, data-lang and data-mode aren't required, checks if its empty before giving it a value
 
-    $olapic_output = "<div id=\"olapic_specific_widget\"></div><script type=\"text/javascript\" src=\"//photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js\"  data-olapic=\"olapic_specific_widget\" {$data_instance} {$data_apikey} {$data_tags} {$data_mode} async=\"async\"></script>";
+    $olapic_output = "<div id=\"olapic_specific_widget\"></div><script type=\"text/javascript\" src=\"//photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js\"  data-olapic=\"olapic_specific_widget\" {$data_instance} {$data_apikey} {$data_tags} {$data_mode} {$data_lang} async=\"async\"></script>";
     //changed from using concatenation. Concatenation using the dot operator will concatenate each one individually. Using curly braces will place the variables in once - better practice when using multiple concatenations
 
     return $olapic_output;

@@ -42,3 +42,5 @@ The shortcode takes in 4 parameters:
 	* Accepted parameter value: `development`
 	* You can use this flag to serve all content from the sandbox environment.
 	* Note that this parameter ***should not*** be utilized for production purposes.
+* `lang` - *optional*
+	* the language code that you want the widget to be translated to. This should correspond with the language code you set in the appearance section of the platform
