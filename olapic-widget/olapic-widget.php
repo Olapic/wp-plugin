@@ -20,6 +20,7 @@ function olapic_function($atts)
         'apikey' => '',
         'tags' => '',
         'mode' => '',
+        'lang' => '',
     ), $atts);
 
     $data_instance = "data-instance=\"{$arguments['instance-id']}\"";
@@ -29,7 +30,7 @@ function olapic_function($atts)
     $data_lang = !empty($arguments['lang']) ? "data-lang=\"{$arguments['lang']}\"" : '';
     //since data-tags, data-lang and data-mode aren't required, checks if its empty before giving it a value
 
-    $olapic_output = "<div id=\"olapic_specific_widget\"></div><script type=\"text/javascript\" src=\"//photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js\"  data-olapic=\"olapic_specific_widget\" {$data_instance} {$data_apikey} {$data_tags} {$data_mode} {$data_lang} async=\"async\"></script>";
+    $olapic_output = "<div id=\"olapic_specific_widget\"></div><script type=\"text/javascript\" src=\"//photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js\"  data-olapic=\"olapic_specific_widget\" {$data_instance} {$data_apikey} {$data_tags} {$data_mode} {$data_lang} async=\"async\"></script>" ;
     //changed from using concatenation. Concatenation using the dot operator will concatenate each one individually. Using curly braces will place the variables in once - better practice when using multiple concatenations
 
     return $olapic_output;
