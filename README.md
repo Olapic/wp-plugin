@@ -43,4 +43,4 @@ The shortcode takes in 4 parameters:
 	* You can use this flag to serve all content from the sandbox environment.
 	* Note that this parameter ***should not*** be utilized for production purposes.
 * `lang` - *optional*
-	* the language code that you want the widget to be translated to. This should correspond with the language code you set in the appearance section of the platform
+	* The language code that you want the widget to be translated to. The naming convention for the language's name is based on the ISO-639 language code (e.g. pt for Portuguese) followed by the ISO-3166 country code (e.g. _PT for Portugal or _BR for Brazil), and corresponds with the language codes set in the "appearance" section of the Olapic platform.
